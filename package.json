@@ -4,9 +4,9 @@
   "description": "Improved defaults for pnpm",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "pnpm install"
   },
   "keywords": [],
   "license": "MIT",
-  "packageManager": "pnpm@10.8.0"
+  "packageManager": "pnpm@10.10.0"
 }
