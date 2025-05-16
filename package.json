@@ -7,7 +7,18 @@
   "scripts": {
     "test": "pnpm install"
   },
-  "keywords": [],
+  "keywords": [
+    "pnpm-config"
+  ],
   "license": "MIT",
-  "packageManager": "pnpm@10.10.0"
+  "packageManager": "pnpm@10.10.0",
+  "funding": "https://opencollective.com/pnpm",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pnpm/better-defaults.git"
+  },
+  "homepage": "https://github.com/pnpm/better-defaults#readme",
+  "bugs": {
+    "url": "https://github.com/pnpm/better-defaults/issues"
+  }
 }
