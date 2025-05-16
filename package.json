@@ -1,8 +1,10 @@
 {
   "name": "@pnpm/better-defaults",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Improved defaults for pnpm",
-  "files": ["pnpmfile.cjs"],
+  "files": [
+    "pnpmfile.cjs"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "pnpm install"
