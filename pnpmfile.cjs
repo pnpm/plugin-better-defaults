@@ -2,6 +2,7 @@ module.exports = {
   hooks: {
     updateConfig (config) {
       Object.assign(config, {
+        enableGlobalVirtualStore: true,
         enablePrePostScripts: false,
         ignorePatchFailures: false,
         optimisticRepeatInstall: true,
