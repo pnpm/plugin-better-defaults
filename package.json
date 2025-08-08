@@ -7,7 +7,7 @@
   ],
   "main": "index.js",
   "scripts": {
-    "test": "pnpm install",
+    "test": "pnpm -C=test install",
     "prepublishOnly": "esbuild --bundle src/pnpmfile.cjs --outfile=pnpmfile.cjs --platform=node"
   },
   "keywords": [
