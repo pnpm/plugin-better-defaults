@@ -7,7 +7,8 @@
   ],
   "main": "index.js",
   "scripts": {
-    "test": "pnpm install"
+    "test": "pnpm install",
+    "prepublishOnly": "esbuild --bundle=src/pnpmfile.cjs --outfile=pnpmfile.cjs --platform=node"
   },
   "keywords": [
     "pnpm-config"
@@ -22,5 +23,9 @@
   "homepage": "https://github.com/pnpm/better-defaults#readme",
   "bugs": {
     "url": "https://github.com/pnpm/better-defaults/issues"
+  },
+  "devDependencies": {
+    "@pnpm/plugin-esm-node-path": "^0.1.2",
+    "esbuild": "^0.25.8"
   }
 }

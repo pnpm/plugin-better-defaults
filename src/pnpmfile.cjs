@@ -1,3 +1,5 @@
+const esmNodePath = require('@pnpm/plugin-esm-node-path')
+
 module.exports = {
   hooks: {
     updateConfig (config) {
@@ -12,7 +14,7 @@ module.exports = {
       if (config.hoistPattern?.length === 1 && config.hoistPattern[0] === '*') {
         config.hoistPattern = []
       }
-      return config
+      return esmNodePath.hooks.updateConfig(config)
     }
   }
 }
