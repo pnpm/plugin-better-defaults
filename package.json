@@ -1,6 +1,6 @@
 {
   "name": "@pnpm/plugin-better-defaults",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Improved defaults for pnpm",
   "files": [
     "pnpmfile.cjs"
