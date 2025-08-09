@@ -3,12 +3,13 @@
   "version": "0.2.0",
   "description": "Improved defaults for pnpm",
   "files": [
-    "pnpmfile.cjs"
+    "pnpmfile.cjs",
+    "esm_loader.mjs"
   ],
   "main": "index.js",
   "scripts": {
-    "test": "rimraf test/node_modules && pnpm -C=test --no-lockfile install",
-    "prepublishOnly": "esbuild --bundle src/pnpmfile.cjs --outfile=pnpmfile.cjs --platform=node"
+    "test": "shx rm -rf test/node_modules && pnpm -C=test --no-lockfile install",
+    "prepublishOnly": "esbuild --bundle src/pnpmfile.cjs --outfile=pnpmfile.cjs --platform=node && shx cp node_modules/@pnpm/plugin-esm-node-path/esm_loader.mjs ."
   },
   "keywords": [
     "pnpm-config"
@@ -27,6 +28,6 @@
   "devDependencies": {
     "@pnpm/plugin-esm-node-path": "^0.1.2",
     "esbuild": "^0.25.8",
-    "rimraf": "^6.0.1"
+    "shx": "^0.4.0"
   }
 }
