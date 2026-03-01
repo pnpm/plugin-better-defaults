@@ -11,6 +11,7 @@
 - Sets [ignorePatchFailures](https://pnpm.io/settings#ignorepatchfailures) to `false`.
 - Sets [optimisticRepeatInstall](https://pnpm.io/settings#optimisticrepeatinstall) to `true`.
 - Sets [resolutionMode](https://pnpm.io/settings#resolutionmode) to `lowest-direct`.
+- Sets [trustPolicy](https://pnpm.io/settings#trustpolicy) to `no-downgrade`.
 - Sets [verifyDepsBeforeRun](https://pnpm.io/settings#verifydepsbeforerun) to `install`.
 
 You can extend or override these settings in your own `.pnpmfile.cjs`.

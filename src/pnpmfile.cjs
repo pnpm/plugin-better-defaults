@@ -10,6 +10,7 @@ module.exports = {
         ignorePatchFailures: false,
         optimisticRepeatInstall: true,
         resolutionMode: 'lowest-direct',
+        trustPolicy: 'no-downgrade',
         verifyDepsBeforeRun: 'install',
       })
       if (config.hoistPattern?.length === 1 && config.hoistPattern[0] === '*') {
