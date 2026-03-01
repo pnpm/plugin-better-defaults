@@ -4,6 +4,7 @@ module.exports = {
   hooks: {
     updateConfig (config) {
       Object.assign(config, {
+        blockExoticSubdeps: true,
         enableGlobalVirtualStore: true,
         enablePrePostScripts: false,
         ignorePatchFailures: false,
