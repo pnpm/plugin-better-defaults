@@ -15,7 +15,7 @@
     "pnpm-config"
   ],
   "license": "MIT",
-  "packageManager": "pnpm@10.21.0",
+  "packageManager": "pnpm@10.26.0",
   "funding": "https://opencollective.com/pnpm",
   "repository": {
     "type": "git",
